@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Tarjetas de presentacion"
+rootProject.name = "Tarjeta de Presentacion"
 include(":app")
- 

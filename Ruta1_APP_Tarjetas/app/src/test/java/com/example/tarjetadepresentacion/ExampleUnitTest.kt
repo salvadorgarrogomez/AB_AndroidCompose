@@ -1,4 +1,4 @@
-package com.example.tarjetasdepresentacion
+package com.example.tarjetadepresentacion
 
 import org.junit.Test
 

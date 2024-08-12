@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tarjetasdepresentacion"
+    namespace = "com.example.tarjetadepresentacion"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.tarjetasdepresentacion"
+        applicationId = "com.example.tarjetadepresentacion"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
