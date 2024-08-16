@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="art_space">Art Space</string>
+    <string name="info_golden">Golde Gate</string>
+    <string name="autor_golden">San Francisco</string>
+    <string name="info_bridge">Tower Bridge</string>
+    <string name="autor_bridge">Londres</string>
+    <string name="info_bahia">Puente de la Bahia</string>
+    <string name="autor_bahia">Sidney</string>
+    <string name="info_rialto">Rialto</string>
+    <string name="autor_rialto">Venecia</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+</resources>
