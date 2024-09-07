@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">APP 30 dias</string>
     <string name="_30_dias_30_peliculas">30 dias, 30 peliculas</string>
+    <string name="posicion">Director: </string>
     <string name="day30">Dia 30</string>
     <string name="day29">Dia 29</string>
     <string name="day28">Dia 28</string>
     <string name="day27">Dia 27</string>
-    <string name="dia26">Dia 26</string>
+    <string name="day26">Dia 26</string>
     <string name="day25">Dia 25</string>
     <string name="day24">Dia 24</string>
     <string name="day23">Dia 23</string>
@@ -16,7 +17,7 @@
     <string name="day18">Dia 18</string>
     <string name="day17">Dia 17</string>
     <string name="day16">Dia 16</string>
-    <string name="dia15">Dia 15</string>
+    <string name="day15">Dia 15</string>
     <string name="day14">Dia 14</string>
     <string name="day13">Dia 13</string>
     <string name="day12">Dia 12</string>
@@ -27,7 +28,7 @@
     <string name="day07">Dia 7</string>
     <string name="day06">Dia 6</string>
     <string name="day05">Dia 5</string>
-    <string name="dia04">Dia 4</string>
+    <string name="day04">Dia 4</string>
     <string name="day03">Dia 3</string>
     <string name="day02">Dia 2</string>
     <string name="day01">Dia 1</string>
