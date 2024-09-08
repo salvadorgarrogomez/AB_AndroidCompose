@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">APP 30 dias</string>
     <string name="_30_dias_30_peliculas">30 dias, 30 peliculas</string>
+    <string name="orden_visionado">30 dias, para ver del Top 1 al Top 30 de las mejores de la historia.</string>
     <string name="posicion">Director: </string>
     <string name="day30">Dia 30</string>
     <string name="day29">Dia 29</string>

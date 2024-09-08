@@ -5,6 +5,7 @@ import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -31,6 +32,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -38,6 +40,7 @@ import androidx.navigation.NavController
 import com.example.app30dias.R
 import com.example.app30dias.data.Films
 import com.example.app30dias.model.FilmsRepository
+import com.example.app30dias.ui.theme.APP30DiasTheme
 
 @Composable
 fun MainApp(){
@@ -46,9 +49,9 @@ fun MainApp(){
             TopAppBar()
         }
     ){
-            it ->
+        it ->
         LazyColumn(contentPadding = it) {
-            items(FilmsRepository.films.reversed()) {
+            items(FilmsRepository.films) {
                 FilmCard(films = it)
             }
         }
@@ -83,6 +86,7 @@ fun TopAppBar(
             }
         }
     )
+    DescriptionPage()
 }
 
 @Composable
@@ -90,7 +94,7 @@ fun FilmCard (
     films: Films,
 ) {
     var expanded by remember { mutableStateOf(false) }
-    val color = MaterialTheme.colorScheme.outlineVariant
+    val color = MaterialTheme.colorScheme.inversePrimary
     Card (modifier = Modifier
         .padding(16.dp)){
         Column (modifier = Modifier
@@ -160,6 +164,26 @@ fun FilmTitle(
 }
 
 @Composable
+fun DescriptionPage(){
+    val color = MaterialTheme.colorScheme.tertiaryContainer
+    Column (
+        modifier = Modifier
+            .padding(top = 64.dp)
+            .background(color = color)
+            .fillMaxWidth(),
+        verticalArrangement = Arrangement.Center,
+    ){
+        Text(
+            text = stringResource(R.string.orden_visionado),
+            modifier = Modifier
+                .padding(start = 8.dp, end = 8.dp),
+            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.bodyLarge
+        )
+    }
+}
+
+@Composable
 fun FilmInfoAdition(
     @StringRes directorFilm: Int,
     @StringRes descriptionFilm: Int,
@@ -173,6 +197,8 @@ fun FilmInfoAdition(
                 text = stringResource(R.string.posicion),
                 style = MaterialTheme.typography.bodyMedium,
                 textAlign = TextAlign.Left)
+            Spacer(modifier = Modifier
+                .padding(2.dp))
             Text(
                 text = stringResource(directorFilm),
                 style = MaterialTheme.typography.bodyMedium,
@@ -193,5 +219,16 @@ fun FilmInfoAdition(
     showSystemUi = true)
 @Composable
 fun GreetingPreview() {
-    MainApp()
+    APP30DiasTheme (darkTheme = false) {
+        MainApp()
+    }
+}
+
+@Preview(showBackground = true,
+    showSystemUi = true)
+@Composable
+fun GreetingPreviewDark() {
+    APP30DiasTheme (darkTheme = true) {
+        MainApp()
+    }
 }

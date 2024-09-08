@@ -31,7 +31,7 @@ object FilmsRepository {
             nameFilm = R.string.film04,
             directorFilm = R.string.director04,
             descriptionFilm = R.string.description01,
-            imageFilm = R.drawable.image01
+            imageFilm = R.drawable.image04
         ),
         Films(
             day = R.string.day05,
@@ -39,13 +39,6 @@ object FilmsRepository {
             directorFilm = R.string.director05,
             descriptionFilm = R.string.description05,
             imageFilm = R.drawable.image05
-        ),
-        Films(
-            day = R.string.day06,
-            nameFilm = R.string.film06,
-            directorFilm = R.string.director06,
-            descriptionFilm = R.string.description06,
-            imageFilm = R.drawable.image06
         ),
         Films(
             day = R.string.day06,
